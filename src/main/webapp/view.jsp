@@ -45,7 +45,7 @@
     BoardVO u = boardDAO.getBoard(Integer.parseInt(id));
 %>
 
-<h1>자유게시판</h1>
+<h1>상세페이지</h1>
 <table id="list" width="90%">
     <tr>
         <th>Id</th>
