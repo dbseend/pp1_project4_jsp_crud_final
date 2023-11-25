@@ -55,11 +55,15 @@
         <th>Regdate</th>
     </tr>
     <tr>
-        <td>${u.getSeq()}</td>
-        <td>${u.getTitle()}</td>
-        <td>${u.getWriter()}</td>
-        <td>${u.getContent()}</td>
-        <td>${u.getRegdate()}</td>
+        <td><%=u.getSeq()%>
+        </td>
+        <td><%=u.getTitle()%>
+        </td>
+        <td><%=u.getWriter()%>
+        </td>
+        <td><%=u.getContent()%>
+        </td>
+        <td><%=u.getRegdate()%>></td>
     </tr>
 </table>
 </body>

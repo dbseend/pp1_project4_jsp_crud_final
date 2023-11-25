@@ -19,7 +19,7 @@ public class BoardDAO {
     private final String BOARD_LIST = "select * from BOARD order by seq desc";
 
     public int insertBoard(BoardVO vo) {
-        System.out.println("===> JDBC·Î insertBoard() ±â´É Ã³¸®");
+        System.out.println("===> JDBCë¡œ insertBoard() ê¸°ëŠ¥ ì²˜ë¦¬");
         try {
             conn = JDBCUtil.getConnection();
             stmt = conn.prepareStatement(BOARD_INSERT);
@@ -38,9 +38,9 @@ public class BoardDAO {
         return 0;
     }
 
-    // ±Û »èÁ¦
+    // ê¸€ ì‚­ì œ
     public void deleteBoard(BoardVO vo) {
-        System.out.println("===> JDBC·Î deleteBoard() ±â´É Ã³¸®");
+        System.out.println("===> JDBCë¡œ deleteBoard() ê¸°ëŠ¥ ì²˜ë¦¬");
         try {
             conn = JDBCUtil.getConnection();
             stmt = conn.prepareStatement(BOARD_DELETE);
@@ -52,7 +52,7 @@ public class BoardDAO {
     }
 
     public int updateBoard(BoardVO vo) {
-        System.out.println("===> JDBC·Î updateBoard() ±â´É Ã³¸®");
+        System.out.println("===> JDBCë¡œ updateBoard() ê¸°ëŠ¥ ì²˜ë¦¬");
         try {
             conn = JDBCUtil.getConnection();
             stmt = conn.prepareStatement(BOARD_UPDATE);
@@ -74,7 +74,7 @@ public class BoardDAO {
 
     public BoardVO getBoard(int seq) {
         BoardVO one = new BoardVO();
-        System.out.println("===> JDBC·Î getBoard() ±â´É Ã³¸®");
+        System.out.println("===> JDBCë¡œ getBoard() ê¸°ëŠ¥ ì²˜ë¦¬");
         try {
             conn = JDBCUtil.getConnection();
             stmt = conn.prepareStatement(BOARD_GET);
@@ -108,7 +108,7 @@ public class BoardDAO {
 
     public List<BoardVO> getBoardList() {
         List<BoardVO> list = new ArrayList<BoardVO>();
-        System.out.println("===> JDBC·Î getBoardList() ±â´É Ã³¸®");
+        System.out.println("===> JDBCë¡œ getBoardList() ê¸°ëŠ¥ ì²˜ë¦¬");
         try {
             conn = JDBCUtil.getConnection();
             stmt = conn.prepareStatement(BOARD_LIST);
